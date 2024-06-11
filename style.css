@@ -1,0 +1,110 @@
+body {
+  background-image: url(beautiful\ skin.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
+  margin-top: 70px;
+}
+.left {
+  display: flex;
+  width: 50%;
+  background: #000;
+}
+.left img {
+  width: 100%;
+}
+
+/* -----------form----------- */
+.right {
+  width: 50%;
+  margin-top: 3rem;
+}
+.title {
+  font-size: 20px;
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+}
+.input-form {
+  display: flex;
+  align-items: center;
+}
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin: 20px;
+  outline: none;
+}
+.username {
+  position: relative;
+}
+.username img,
+.adress img,
+.gender img,
+.password img,
+.confirm img {
+  position: absolute;
+  top: 0.1rem;
+  right: 20px;
+  width: 20px;
+}
+.adress {
+  position: relative;
+}
+
+.gender {
+  position: relative;
+}
+
+.password {
+  position: relative;
+}
+
+.confirm {
+  position: relative;
+}
+
+div p {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  width: 30%;
+}
+.bouton {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* -------------responsivité------------- */
+@media screen and(max-width: 680px) and(min-width: 480px) {
+  .container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+  }
+  .left {
+    background-color: #000;
+    width: 50%;
+  }
+    .right{
+    background-color: #000;
+    width: 20%;
+  }
+}
